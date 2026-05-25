@@ -7,7 +7,6 @@
   <div class="nav-links">
     <a href="/" class:active={$page.url.pathname === '/'}>Home</a>
     <a href="/about" class:active={$page.url.pathname === '/about'}>About</a>
-    <a href="/work" class:active={$page.url.pathname === '/work'}>Work</a>
     <a href="/photos" class:active={$page.url.pathname === '/photos'}>Photos</a>
   </div>
 </nav>
