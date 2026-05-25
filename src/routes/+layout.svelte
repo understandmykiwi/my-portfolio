@@ -34,12 +34,21 @@
     color: #111;
   }
 
+  /* Centered wrapper for all content */
+  :global(body > *) {
+    width: 100%;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
   }
+
   .logo {
     font-family: 'Courier New', monospace;
     font-weight: 700;
@@ -49,44 +58,80 @@
     text-decoration: none;
     color: #111;
   }
+
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
   }
+
   .nav-links a {
     font-family: Georgia, serif;
     font-size: 15px;
     text-decoration: none;
     color: #888;
   }
+
   .nav-links a:hover,
   .nav-links a.active {
     color: #111;
   }
 
   main {
-    max-width: 760px;
-    padding: 3rem 2.5rem 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+    width: 100%;
   }
 
   footer {
-    padding: 1.5rem 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 13px;
     color: #bbb;
-    margin-top: 2rem;
+    width: 100%;
   }
+
   .footer-links {
     display: flex;
     gap: 1.5rem;
   }
+
   footer a {
     color: #bbb;
     text-decoration: none;
   }
+
   footer a:hover {
     color: #888;
+  }
+
+  /* Mobile — phones */
+  @media (max-width: 600px) {
+    nav {
+      padding: 1.2rem 1.25rem;
+    }
+
+    .nav-links {
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+    }
+
+    main {
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    footer {
+      padding: 1.25rem 1.25rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
   }
 </style>
