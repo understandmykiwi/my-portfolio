@@ -51,7 +51,7 @@
 <svelte:window on:keydown={onKey} />
 
 <h1>Photos.</h1>
-<p class="sub">A few photos from Seattle and beyond.</p>
+<p class="sub">Tallest tree, sweetest fruit, and some memories from the past.</p>
 
 <div class="grid">
   {#each photos as photo, i}
