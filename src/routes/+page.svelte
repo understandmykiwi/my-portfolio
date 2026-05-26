@@ -5,7 +5,7 @@
 
 <div class="entry">
   <span class="entry-role">SVP Compliance</span>
-  <span class="entry-sub">Ant Group · 2025 – Present</span>
+  <span class="entry-sub">Global tech firm · 2025 – Present</span>
 </div>
 <div class="entry">
   <span class="entry-role">VP Corporate Compliance & AML Officer</span>
