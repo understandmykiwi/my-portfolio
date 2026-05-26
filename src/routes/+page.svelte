@@ -24,14 +24,14 @@
 </div>
 
 <p class="section-label">Certifications</p>
-<p class="plain-text">CAMS · CFE · ARM · CIPM<br>ACLI AML & Critical Infrastructure Task Force Board Member</p>
+<p class="plain-text">CAMS · CFE · ARM · CIPM</p>
 
 <p class="section-label">Interests</p>
-<p class="plain-text">Tennis. Pickleball. Swimming. Hiking.</p>
+<p class="plain-text">Tennis · Pickleball · Swimming · Hiking · Investments · Dog park</p>
 
 <p class="section-label">Get in touch</p>
 <p class="contact-text">
-  Feel free to reach out if you'd like to connect. You can find me on
+ If you'd like to connect, you can find me on
   <a href="https://www.linkedin.com/in/harveychu/" target="_blank">LinkedIn</a>
   or send me a <a href="mailto:hello@harveychu.com">note</a>.
 </p>
