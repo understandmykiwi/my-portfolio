@@ -1,5 +1,5 @@
 <h1>Hi, I'm Harvey.</h1>
-<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors. I lead regulatory compliance programs that are rigorous without being rigid and further business goals — and teams that effectively execute them.</p>
+<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors.</p>
 
 <p class="section-label">Work</p>
 

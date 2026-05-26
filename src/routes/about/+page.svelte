@@ -1,8 +1,8 @@
 <h1>About.</h1>
 
 <div class="about-text">
-  <p>I help financial institutions make sense of increasingly complex regulatory environments and lead teams that implement legal requirements. I've worked closely with data science, engineering, and legal teams to modernize how institutions detect and respond to financial crime — not just check boxes.</p>
-  <p>I'm based in the Seattle / Bellevue, WA area. Outside of work, I try to spend as much time as possible outdoors.</p>
+  <p>I help financial institutions make sense of increasingly complex regulatory environments and lead teams that implement legal requirements. I've worked closely with data science, engineering, and legal teams to modernize how institutions detect and respond to financial crimes.
+<p>I'm based in the Seattle / Bellevue, WA area. Outside of work, I enjoy traveling for food, connecting with people, and pursuing various interests.</p>
 </div>
 
 <style>
