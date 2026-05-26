@@ -5,22 +5,22 @@
 
 <div class="entry">
   <span class="entry-role">SVP Compliance</span>
-  <span class="entry-meta">Ant Group · 2025 – Present</span>
+  <span class="entry-sub">Ant Group · 2025 – Present</span>
 </div>
 <div class="entry">
   <span class="entry-role">VP Corporate Compliance & AML Officer</span>
-  <span class="entry-meta">Symetra Life Insurance · 2019 – 2025</span>
+  <span class="entry-sub">Symetra Life Insurance · 2019 – 2025</span>
 </div>
 <div class="entry">
   <span class="entry-role">Manager, Financial Crimes Consulting</span>
-  <span class="entry-meta">KPMG US · 2011 – 2019</span>
+  <span class="entry-sub">KPMG US · 2011 – 2019</span>
 </div>
 
 <p class="section-label">Education</p>
 
 <div class="entry">
   <span class="entry-role">B.A. Economics</span>
-  <span class="entry-meta">University of Chicago · 2011</span>
+  <span class="entry-sub">University of Chicago · 2011</span>
 </div>
 
 <p class="section-label">Certifications</p>
@@ -66,20 +66,24 @@
   .entry {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.8rem;
+    gap: 0.1rem;
+    margin-bottom: 1.6rem;
   }
 
   .entry-role {
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 15px;
     font-weight: 400;
     color: #111;
-    margin-bottom: 0.15rem;
+    line-height: 1.4;
   }
 
-  .entry-meta {
-    font-size: 13px;
-    color: #999;
-    font-family: 'Courier New', monospace;
+  .entry-sub {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #111;
+    line-height: 1.4;
   }
 
   .plain-text {
