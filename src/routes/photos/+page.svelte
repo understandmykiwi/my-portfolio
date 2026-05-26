@@ -1,34 +1,18 @@
 <script>
-  function shuffle(arr, seed) {
-    const a = [...arr];
-    for (let i = a.length - 1; i > 0; i--) {
-      seed = (seed * 1664525 + 1013904223) & 0xffffffff;
-      const j = Math.abs(seed) % (i + 1);
-      [a[i], a[j]] = [a[j], a[i]];
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-    return a;
+    return arr;
   }
 
-  // Use a fixed seed stored in sessionStorage so order is
-  // identical for the entire browser session including refreshes
-  let seed;
-  if (typeof sessionStorage !== 'undefined') {
-    seed = parseInt(sessionStorage.getItem('photo-seed') || '0');
-    if (!seed) {
-      seed = Math.floor(Math.random() * 1000000) + 1;
-      sessionStorage.setItem('photo-seed', String(seed));
-    }
-  } else {
-    seed = 42;
-  }
-
-  const base = Array.from({length: 45}, (_, i) => ({
+  const allPhotos = Array.from({length: 45}, (_, i) => ({
     src: `/photos/harvey-chu-${i + 1}.jpeg`,
-    alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`,
-    id: i + 1
+    alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`
   }));
 
-  const photos = shuffle(base, seed);
+  const photos = Object.freeze(shuffle(allPhotos));
 
   let currentPhoto = null;
   let currentIndex = -1;
@@ -109,7 +93,7 @@
 <p class="sub">Some memories from the past.</p>
 
 <div class="grid">
-  {#each photos as photo, i (photo.id)}
+  {#each photos as photo, i (photo.src)}
     <button class="thumb" on:click={() => open(i)} aria-label="Open photo {i + 1}">
       <img src={photo.src} alt={photo.alt} loading="lazy" />
     </button>
@@ -191,6 +175,7 @@
 
   .thumb:hover img { opacity: 0.82; }
 
+  /* Lightbox */
   .lightbox {
     position: fixed;
     inset: 0;
@@ -244,6 +229,7 @@
     opacity: 1;
   }
 
+  /* Arrow buttons */
   .lb-prev,
   .lb-next {
     position: fixed;
@@ -278,7 +264,11 @@
     backdrop-filter: blur(4px);
   }
 
-  .lb-prev:hover .arrow-circle,
+  .lb-prev:hover .arrow-circle {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.08);
+  }
+
   .lb-next:hover .arrow-circle {
     background: rgba(255, 255, 255, 0.25);
     transform: scale(1.08);
@@ -292,6 +282,7 @@
     letter-spacing: 0.06em;
   }
 
+  /* Responsive grid */
   @media (min-width: 1200px) {
     .grid { grid-template-columns: repeat(5, 1fr); }
   }
