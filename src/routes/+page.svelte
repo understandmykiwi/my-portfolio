@@ -1,4 +1,4 @@
-<h1>Hi, I'm Harvey Chu.</h1>
+<h1>Hi, I'm Harvey.</h1>
 <p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors. I lead regulatory compliance programs that are rigorous without being rigid and further business goals — and teams that effectively execute them.</p>
 
 <p class="section-label">Work</p>
@@ -46,7 +46,7 @@
 
   .intro-sub {
     font-size: 15px;
-    color: #666;
+    color: #555;
     line-height: 1.8;
     max-width: 540px;
     margin-bottom: 3.5rem;
@@ -60,7 +60,7 @@
     font-weight: 700;
     color: #111;
     margin-top: 2.8rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.6rem;
   }
 
   .entry {
@@ -74,7 +74,7 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 15px;
     font-weight: 400;
-    color: #111;
+    color: #555;
     line-height: 1.4;
   }
 
@@ -82,19 +82,19 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 15px;
     font-weight: 400;
-    color: #111;
+    color: #555;
     line-height: 1.4;
   }
 
   .plain-text {
     font-size: 15px;
-    color: #888;
+    color: #555;
     line-height: 2;
   }
 
   .contact-text {
     font-size: 15px;
-    color: #666;
+    color: #555;
     line-height: 1.9;
     max-width: 520px;
     margin-top: 0.4rem;
