@@ -1,7 +1,7 @@
-<h1>Hi, I'm Harvey.</h1>
-<p class="intro-sub">Compliance executive in Seattle with 15+ years across FinTech, banking, and insurance. I build programs that are rigorous without being rigid — and teams that can actually execute them.</p>
+<h1>Hi, I'm Harvey Chu.</h1>
+<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors. I lead regulatory compliance programs that are rigorous without being rigid and further business goals — and teams that effectively execute them.</p>
 
-<p class="section-label">Experience</p>
+<p class="section-label">Work</p>
 
 <div class="entry">
   <span class="entry-role">SVP Compliance</span>
@@ -24,13 +24,16 @@
 </div>
 
 <p class="section-label">Certifications</p>
-<p class="cert-row">CAMS · CFE · ARM · CIPM<br>ACLI AML & Critical Infrastructure Task Force</p>
+<p class="plain-text">CAMS · CFE · ARM · CIPM<br>ACLI AML & Critical Infrastructure Task Force Board Member</p>
+
+<p class="section-label">Interests</p>
+<p class="plain-text">Tennis. Pickleball. Swimming. Hiking.</p>
 
 <p class="section-label">Get in touch</p>
 <p class="contact-text">
-  Feel free to reach out if you'd like to connect or collaborate. You can find me on
+  Feel free to reach out if you'd like to connect. You can find me on
   <a href="https://www.linkedin.com/in/harveychu/" target="_blank">LinkedIn</a>
-  or send me an <a href="mailto:hello@harveychu.com">email</a>.
+  or send me a <a href="mailto:hello@harveychu.com">note</a>.
 </p>
 
 <style>
@@ -40,6 +43,7 @@
     margin-bottom: 0.75rem;
     line-height: 1.2;
   }
+
   .intro-sub {
     font-size: 15px;
     color: #666;
@@ -47,6 +51,7 @@
     max-width: 540px;
     margin-bottom: 3.5rem;
   }
+
   .section-label {
     font-family: 'Courier New', monospace;
     font-size: 1rem;
@@ -57,27 +62,32 @@
     margin-top: 2.8rem;
     margin-bottom: 1.2rem;
   }
+
   .entry {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.8rem;
   }
+
   .entry-role {
     font-size: 15px;
     font-weight: 400;
     color: #111;
     margin-bottom: 0.15rem;
   }
+
   .entry-meta {
-    font-family: 'Courier New', monospace;
     font-size: 13px;
     color: #999;
+    font-family: 'Courier New', monospace;
   }
-  .cert-row {
+
+  .plain-text {
     font-size: 15px;
     color: #888;
     line-height: 2;
   }
+
   .contact-text {
     font-size: 15px;
     color: #666;
@@ -85,6 +95,7 @@
     max-width: 520px;
     margin-top: 0.4rem;
   }
+
   .contact-text a {
     color: #111;
     text-decoration: underline;
