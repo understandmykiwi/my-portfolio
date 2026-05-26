@@ -1,23 +1,35 @@
-<script context="module">
-  function shuffle(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+<script>
+  function shuffle(arr, seed) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      seed = (seed * 1664525 + 1013904223) & 0xffffffff;
+      const j = Math.abs(seed) % (i + 1);
+      [a[i], a[j]] = [a[j], a[i]];
     }
-    return arr;
+    return a;
   }
 
-  // Lives outside component lifecycle — computed once, never again
-  const photos = shuffle(
-    Array.from({length: 45}, (_, i) => ({
-      src: `/photos/harvey-chu-${i + 1}.jpeg`,
-      alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`,
-      id: i + 1
-    }))
-  );
-</script>
+  // Use a fixed seed stored in sessionStorage so order is
+  // identical for the entire browser session including refreshes
+  let seed;
+  if (typeof sessionStorage !== 'undefined') {
+    seed = parseInt(sessionStorage.getItem('photo-seed') || '0');
+    if (!seed) {
+      seed = Math.floor(Math.random() * 1000000) + 1;
+      sessionStorage.setItem('photo-seed', String(seed));
+    }
+  } else {
+    seed = 42;
+  }
 
-<script>
+  const base = Array.from({length: 45}, (_, i) => ({
+    src: `/photos/harvey-chu-${i + 1}.jpeg`,
+    alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`,
+    id: i + 1
+  }));
+
+  const photos = shuffle(base, seed);
+
   let currentPhoto = null;
   let currentIndex = -1;
   let startX = 0;
