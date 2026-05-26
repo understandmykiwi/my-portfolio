@@ -12,14 +12,27 @@
     alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`
   })));
 
-  let current = -1;
+  let currentPhoto = null;
+  let currentIndex = -1;
   let startX = 0;
 
-  function open(i) { current = i; }
-  function close() { current = -1; }
-  function go(i) { current = ((i % photos.length) + photos.length) % photos.length; }
-  function next() { go(current + 1); }
-  function prev() { go(current - 1); }
+  function open(i) {
+    currentIndex = i;
+    currentPhoto = photos[i];
+  }
+
+  function close() {
+    currentIndex = -1;
+    currentPhoto = null;
+  }
+
+  function go(i) {
+    currentIndex = ((i % photos.length) + photos.length) % photos.length;
+    currentPhoto = photos[currentIndex];
+  }
+
+  function next() { go(currentIndex + 1); }
+  function prev() { go(currentIndex - 1); }
 
   function touchStart(e) { startX = e.touches[0].clientX; }
   function touchEnd(e) {
@@ -28,7 +41,7 @@
   }
 
   function onKey(e) {
-    if (current < 0) return;
+    if (!currentPhoto) return;
     if (e.key === 'ArrowRight') next();
     if (e.key === 'ArrowLeft') prev();
     if (e.key === 'Escape') close();
@@ -48,7 +61,7 @@
   {/each}
 </div>
 
-{#if current >= 0}
+{#if currentPhoto}
   <div
     class="lightbox"
     role="dialog"
@@ -59,9 +72,9 @@
   >
     <button class="lb-close" on:click={close} aria-label="Close">✕</button>
     <button class="lb-prev" on:click={prev} aria-label="Previous">&#8249;</button>
-    <img class="lb-img" src={photos[current].src} alt={photos[current].alt} />
+    <img class="lb-img" src={currentPhoto.src} alt={currentPhoto.alt} />
     <button class="lb-next" on:click={next} aria-label="Next">&#8250;</button>
-    <p class="lb-counter">{current + 1} / {photos.length}</p>
+    <p class="lb-counter">{currentIndex + 1} / {photos.length}</p>
   </div>
 {/if}
 
@@ -81,7 +94,6 @@
     margin-bottom: 1.5rem;
   }
 
-  /* Grid — responsive columns based on screen size */
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -111,7 +123,6 @@
     opacity: 0.82;
   }
 
-  /* Lightbox */
   .lightbox {
     position: fixed;
     inset: 0;
@@ -174,51 +185,22 @@
     letter-spacing: 0.06em;
   }
 
-  /* Large desktop — 5 columns */
   @media (min-width: 1200px) {
-    .grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
+    .grid { grid-template-columns: repeat(5, 1fr); }
   }
 
-  /* Tablet landscape / small desktop — 4 columns (default above) */
-
-  /* Tablet portrait — 3 columns */
   @media (max-width: 900px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .grid { grid-template-columns: repeat(3, 1fr); }
   }
 
-  /* Large phone — 3 columns */
   @media (max-width: 600px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
-    }
-
-    .lb-img {
-      max-width: 96vw;
-      max-height: 75vh;
-    }
-
-    .lb-prev,
-    .lb-next {
-      font-size: 2.2rem;
-      padding: 0 0.6rem;
-    }
-
-    .lb-close {
-      top: 1rem;
-      right: 1rem;
-    }
+    .grid { grid-template-columns: repeat(3, 1fr); gap: 3px; }
+    .lb-img { max-width: 96vw; max-height: 75vh; }
+    .lb-prev, .lb-next { font-size: 2.2rem; padding: 0 0.6rem; }
+    .lb-close { top: 1rem; right: 1rem; }
   }
 
-  /* Small phone — 2 columns */
   @media (max-width: 380px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 3px;
-    }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 3px; }
   }
 </style>
