@@ -51,16 +51,16 @@
     width: 100%;
   }
 
-  .logo {
+.logo {
     font-family: 'Courier New', monospace;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     text-decoration: none;
     color: #111;
   }
-
+  
   .nav-links {
     display: flex;
     gap: 1.5rem;
