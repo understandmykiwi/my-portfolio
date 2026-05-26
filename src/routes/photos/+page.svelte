@@ -7,8 +7,8 @@
     return arr;
   }
 
-  const photos = shuffle(Array.from({length: 50}, (_, i) => ({
-    src: `/photos/harvey-chu-${i + 1}.jpg`,
+  const photos = shuffle(Array.from({length: 45}, (_, i) => ({
+    src: `/photos/harvey-chu-${i + 1}.jpeg`,
     alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`
   })));
 
