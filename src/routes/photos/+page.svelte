@@ -9,7 +9,7 @@
 
   const photos = shuffle(Array.from({length: 50}, (_, i) => ({
     src: `/photos/harvey-chu-${i + 1}.jpg`,
-    alt: `Harvey Chu Seattle compliance executive — photo ${i + 1}`
+    alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`
   })));
 
   let current = -1;
