@@ -7,7 +7,7 @@
     return arr;
   }
 
-  const allPhotos = Array.from({length: 76}, (_, i) => ({
+  const allPhotos = Array.from({length: 83}, (_, i) => ({
     src: `/photos/harvey-chu-${i + 1}.jpeg`,
     alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`
   }));
