@@ -1,19 +1,25 @@
-<h1>Hi, I'm Harvey.</h1>
-<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors.</p>
+<h1>Hi, I'm Harvey Chu.</h1>
+<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors. I lead regulatory compliance programs that are rigorous without being rigid and further business goals — and teams that effectively execute them.</p>
 
 <p class="section-label">Work</p>
 
 <div class="entry">
-  <span class="entry-role">SVP Compliance</span>
-  <span class="entry-sub">Global tech firm · 2025 – Present</span>
+  <span class="entry-role">SVP Compliance · 2025 – Present</span>
+  <span class="entry-company">Global FinTech</span>
 </div>
+
 <div class="entry">
-  <span class="entry-role">VP Corporate Compliance & AML Officer</span>
-  <span class="entry-sub">Symetra Life Insurance · 2019 – 2025</span>
+  <span class="entry-role">VP Corporate Compliance · 2022 – 2025</span>
+  <span class="entry-role">AVP Compliance, AML Officer & Privacy Officer · 2019 – 2022</span>
+  <span class="entry-company">Symetra Life Insurance</span>
 </div>
+
 <div class="entry">
-  <span class="entry-role">Manager, Financial Crimes Consulting</span>
-  <span class="entry-sub">KPMG US · 2011 – 2019</span>
+  <span class="entry-role">Senior Instructor, KPMG Business School · 2018 – 2019</span>
+  <span class="entry-role">Manager, Financial Crimes Consulting · 2016 – 2019</span>
+  <span class="entry-role">Senior Associate, Financial Crimes Consulting · 2013 – 2016</span>
+  <span class="entry-role">Associate, Financial Management · 2011 – 2013</span>
+  <span class="entry-company">KPMG US</span>
 </div>
 
 <p class="section-label">Education</p>
@@ -24,14 +30,14 @@
 </div>
 
 <p class="section-label">Certifications</p>
-<p class="plain-text">CAMS · CFE · ARM · CIPM</p>
+<p class="plain-text">CAMS · CFE · ARM · CIPM<br>ACLI AML & Critical Infrastructure Task Force Board Member</p>
 
 <p class="section-label">Interests</p>
-<p class="plain-text">Tennis · Pickleball · Swimming · Hiking · Investments · Dog park</p>
+<p class="plain-text">Tennis. Pickleball. Swimming. Hiking.</p>
 
 <p class="section-label">Get in touch</p>
 <p class="contact-text">
- If you'd like to connect, you can find me on
+  Feel free to reach out if you'd like to connect. You can find me on
   <a href="https://www.linkedin.com/in/harveychu/" target="_blank">LinkedIn</a>
   or send me a <a href="mailto:hello@harveychu.com">note</a>.
 </p>
@@ -45,7 +51,7 @@
   }
 
   .intro-sub {
-    font-size: 15px;
+    font-size: 16px;
     color: #555;
     line-height: 1.8;
     max-width: 540px;
@@ -66,34 +72,43 @@
   .entry {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
-    margin-bottom: 1.6rem;
+    gap: 0.15rem;
+    margin-bottom: 1.8rem;
   }
 
   .entry-role {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     color: #555;
-    line-height: 1.4;
+    line-height: 1.5;
+  }
+
+  .entry-company {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 0.2rem;
   }
 
   .entry-sub {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     color: #555;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .plain-text {
-    font-size: 15px;
+    font-size: 16px;
     color: #555;
     line-height: 2;
   }
 
   .contact-text {
-    font-size: 15px;
+    font-size: 16px;
     color: #555;
     line-height: 1.9;
     max-width: 520px;
