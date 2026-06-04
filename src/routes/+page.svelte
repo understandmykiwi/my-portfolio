@@ -60,7 +60,7 @@
 
   .section-label {
     font-family: 'Courier New', monospace;
-    font-size: 1rem;
+    font-size: 1.15rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     font-weight: 700;
@@ -86,7 +86,7 @@
 
   .entry-company {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #333;
     line-height: 1.5;
