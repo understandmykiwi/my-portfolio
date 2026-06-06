@@ -16,9 +16,7 @@
 
 <div class="entry">
   <span class="entry-role">Senior Instructor, KPMG Business School · 2018 – 2019</span>
-  <span class="entry-role">Manager, Financial Crimes Consulting · 2016 – 2019</span>
-  <span class="entry-role">Senior Associate, Financial Crimes Consulting · 2013 – 2016</span>
-  <span class="entry-role">Associate, Financial Management · 2011 – 2013</span>
+  <span class="entry-role">Manager, Financial Crimes Consulting · 2011 – 2019</span>
   <span class="entry-company">KPMG US</span>
 </div>
 
@@ -51,10 +49,10 @@
   }
 
   .intro-sub {
-    font-size: 16px;
+    font-size: 17px;
     color: #555;
     line-height: 1.8;
-    max-width: 540px;
+    max-width: 560px;
     margin-bottom: 3.5rem;
   }
 
@@ -78,40 +76,40 @@
 
   .entry-role {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #555;
+    font-size: 17px;
+    font-weight: 600;
+    color: #444;
     line-height: 1.5;
   }
 
   .entry-company {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
     line-height: 1.5;
     margin-top: 0.2rem;
   }
 
   .entry-sub {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
-    color: #555;
+    color: #666;
     line-height: 1.5;
   }
 
   .plain-text {
-    font-size: 16px;
+    font-size: 17px;
     color: #555;
     line-height: 2;
   }
 
   .contact-text {
-    font-size: 16px;
+    font-size: 17px;
     color: #555;
     line-height: 1.9;
-    max-width: 520px;
+    max-width: 540px;
     margin-top: 0.4rem;
   }
 
