@@ -1,5 +1,5 @@
 <h1>Hi, I'm Harvey Chu.</h1>
-<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors. I lead regulatory compliance programs that are rigorous without being rigid — and teams that effectively execute them.</p>
+<p class="intro-sub">I'm a compliance executive in the Seattle / Bellevue, WA area with 15+ years of experience across FinTech, banking, and insurance sectors. I lead regulatory compliance programs that are rigorous without being rigid and further business goals — and teams that effectively execute them.</p>
 
 <p class="section-label">Work</p>
 
@@ -74,22 +74,23 @@
     margin-bottom: 3.5rem;
   }
 
+  /* Section headers — large and bold, clearly dominant */
   .section-label {
-    font-family: 'Courier New', monospace;
-    font-size: 1.15rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #111;
+    letter-spacing: 0;
+    text-transform: none;
     margin-top: 2.8rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
   }
 
   .entry {
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
-    margin-bottom: 1.8rem;
+    gap: 0.1rem;
+    margin-bottom: 1.6rem;
   }
 
   .entry-row {
@@ -99,29 +100,33 @@
     gap: 1rem;
   }
 
+  /* Job titles — black, regular weight, same size as intro text */
   .entry-role {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 400;
-    color: #555;
-    line-height: 1.5;
+    color: #111;
+    line-height: 1.6;
   }
 
+  /* Years — same style as paragraph text */
   .entry-year {
-    font-family: 'Courier New', monospace;
-    font-size: 13px;
-    color: #999;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #555;
     white-space: nowrap;
     flex-shrink: 0;
   }
 
+  /* Company names — same style as paragraph text */
   .entry-company {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
-    font-weight: 700;
-    color: #111;
-    line-height: 1.5;
-    margin-top: 0.2rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 0.1rem;
   }
 
   .plain-text {
