@@ -4,27 +4,45 @@
 <p class="section-label">Work</p>
 
 <div class="entry">
-  <span class="entry-role">SVP Compliance · 2025 – Present</span>
+  <div class="entry-row">
+    <span class="entry-role">SVP Compliance</span>
+    <span class="entry-year">2025 – Present</span>
+  </div>
   <span class="entry-company">Global FinTech</span>
 </div>
 
 <div class="entry">
-  <span class="entry-role">VP Corporate Compliance · 2022 – 2025</span>
-  <span class="entry-role">AVP Compliance, AML Officer & Privacy Officer · 2019 – 2022</span>
+  <div class="entry-row">
+    <span class="entry-role">VP Corporate Compliance</span>
+    <span class="entry-year">2022 – 2025</span>
+  </div>
+  <div class="entry-row">
+    <span class="entry-role">AVP Compliance, AML Officer & Privacy Officer</span>
+    <span class="entry-year">2019 – 2022</span>
+  </div>
   <span class="entry-company">Symetra Life Insurance</span>
 </div>
 
 <div class="entry">
-  <span class="entry-role">Senior Instructor, KPMG Business School · 2018 – 2019</span>
-  <span class="entry-role">Manager, Financial Crimes Consulting · 2011 – 2019</span>
+  <div class="entry-row">
+    <span class="entry-role">Senior Instructor, KPMG Business School</span>
+    <span class="entry-year">2018 – 2019</span>
+  </div>
+  <div class="entry-row">
+    <span class="entry-role">Manager, Financial Crimes Consulting</span>
+    <span class="entry-year">2011 – 2019</span>
+  </div>
   <span class="entry-company">KPMG US</span>
 </div>
 
 <p class="section-label">Education</p>
 
 <div class="entry">
-  <span class="entry-role">B.A. Economics</span>
-  <span class="entry-sub">University of Chicago · 2011</span>
+  <div class="entry-row">
+    <span class="entry-role">B.A. Economics</span>
+    <span class="entry-year">2011</span>
+  </div>
+  <span class="entry-company">University of Chicago</span>
 </div>
 
 <p class="section-label">Certifications</p>
@@ -74,29 +92,36 @@
     margin-bottom: 1.8rem;
   }
 
+  .entry-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
   .entry-role {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
-    font-weight: 600;
-    color: #444;
+    font-weight: 400;
+    color: #555;
     line-height: 1.5;
+  }
+
+  .entry-year {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #999;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .entry-company {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: #666;
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
     line-height: 1.5;
     margin-top: 0.2rem;
-  }
-
-  .entry-sub {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 17px;
-    font-weight: 400;
-    color: #666;
-    line-height: 1.5;
   }
 
   .plain-text {
