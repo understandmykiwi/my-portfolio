@@ -5,10 +5,10 @@
 
 <div class="entry">
   <div class="entry-row">
-    <span class="entry-role">SVP Compliance</span>
+    <span class="entry-role">SVP Financial Crimes</span>
     <span class="entry-year">2025 – Present</span>
   </div>
-  <span class="entry-company">Global FinTech</span>
+  <span class="entry-company">Global FinTech Compliance</span>
 </div>
 
 <div class="entry">
@@ -30,7 +30,7 @@
   </div>
   <div class="entry-row">
     <span class="entry-role">Manager, Financial Crimes Consulting</span>
-    <span class="entry-year">2011 – 2019</span>
+    <span class="entry-year">2012 – 2019</span>
   </div>
   <span class="entry-company">KPMG US</span>
 </div>
@@ -40,7 +40,7 @@
 <div class="entry">
   <div class="entry-row">
     <span class="entry-role">B.A. Economics</span>
-    <span class="entry-year">2011</span>
+    <span class="entry-year">2012</span>
   </div>
   <span class="entry-company">University of Chicago</span>
 </div>
@@ -48,8 +48,11 @@
 <p class="section-label">Certifications</p>
 <p class="plain-text">CAMS · CFE · ARM · CIPM<br>ACLI AML & Critical Infrastructure Task Force Board Member</p>
 
+<p class="section-label">Licenses</p>
+<p class="plain-text">WA Real Estate Managing Broker</p>
+
 <p class="section-label">Interests</p>
-<p class="plain-text">Tennis. Pickleball. Swimming. Hiking.</p>
+<p class="plain-text">Tennis. Pickleball. Swimming. Hiking. Investments. Dog park.</p>
 
 <p class="section-label">Get in touch</p>
 <p class="contact-text">
