@@ -26,7 +26,7 @@
 <footer>
   <span>© 2026 Harvey Chu</span>
   <div class="footer-links">
-    <a href="https://www.linkedin.com/in/harveychu/" target="_blank">LinkedIn</a>
+    <a href="/linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="mailto:hello@harveychu.com">Email</a>
   </div>
 </footer>
@@ -35,7 +35,7 @@
   :global(*, *::before, *::after) { margin: 0; padding: 0; box-sizing: border-box; }
   :global(body) {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.7;
     background: #fff;
     color: #111;
@@ -45,13 +45,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem;
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
   }
 
-.logo {
+  /* Border below nav matching Daniel's site */
+  nav {
+    border-bottom: 1px solid #e5e5e5;
+    max-width: 100%;
+    padding: 2rem 3rem;
+  }
+
+  .logo {
     font-family: 'Courier New', monospace;
     font-weight: 700;
     font-size: 17px;
@@ -60,7 +67,7 @@
     text-decoration: none;
     color: #111;
   }
-  
+
   .nav-links {
     display: flex;
     gap: 1.5rem;
@@ -68,9 +75,9 @@
 
   .nav-links a {
     font-family: Georgia, serif;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
-    color: #888;
+    color: #aaa;
   }
 
   .nav-links a:hover,
@@ -82,10 +89,10 @@
   .hero {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto 0;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 6px;
-    padding: 0 2rem;
+    padding: 2rem 2rem 0;
   }
 
   .hero img {
@@ -105,9 +112,10 @@
   }
 
   footer {
-    max-width: 800px;
+    max-width: 100%;
+    border-top: 1px solid #e5e5e5;
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,50 +140,24 @@
 
   /* Tablet */
   @media (max-width: 900px) {
-    .hero img {
-      height: 260px;
-    }
+    .hero img { height: 260px; }
+    nav { padding: 1.8rem 2rem; }
+    footer { padding: 1.5rem 2rem; }
   }
 
   /* Large phone */
   @media (max-width: 600px) {
-    nav {
-      padding: 1.2rem 1.25rem;
-    }
-
-    .nav-links {
-      gap: 1rem;
-    }
-
-    .nav-links a {
-      font-size: 14px;
-    }
-
-    .hero {
-      padding: 0 1.25rem;
-    }
-
-    .hero img {
-      height: 200px;
-      object-position: center 20%;
-    }
-
-    main {
-      padding: 2rem 1.25rem 4rem;
-    }
-
-    footer {
-      padding: 1.25rem 1.25rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
+    nav { padding: 1.4rem 1.25rem; }
+    .nav-links { gap: 1rem; }
+    .nav-links a { font-size: 15px; }
+    .hero { padding: 1.25rem 1.25rem 0; }
+    .hero img { height: 200px; object-position: center 20%; }
+    main { padding: 2rem 1.25rem 4rem; }
+    footer { padding: 1.25rem; flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   }
 
   /* Small phone */
   @media (max-width: 380px) {
-    .hero img {
-      height: 160px;
-    }
+    .hero img { height: 160px; }
   }
 </style>

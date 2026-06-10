@@ -68,7 +68,7 @@
 
   .intro-sub {
     font-size: 17px;
-    color: #555;
+    color: #888;
     line-height: 1.8;
     max-width: 560px;
     margin-bottom: 3.5rem;
@@ -114,7 +114,7 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 400;
-    color: #555;
+    color: #888;
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -124,20 +124,20 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 400;
-    color: #555;
+    color: #888;
     line-height: 1.6;
     margin-top: 0.1rem;
   }
 
   .plain-text {
     font-size: 17px;
-    color: #555;
+    color: #888;
     line-height: 2;
   }
 
   .contact-text {
     font-size: 17px;
-    color: #555;
+    color: #888;
     line-height: 1.9;
     max-width: 540px;
     margin-top: 0.4rem;
