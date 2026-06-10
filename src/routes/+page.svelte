@@ -68,7 +68,7 @@
 
   .intro-sub {
     font-size: 17px;
-    color: #888;
+    color: #64748b;
     line-height: 1.8;
     max-width: 560px;
     margin-bottom: 3.5rem;
@@ -105,7 +105,7 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 400;
-    color: #111;
+    color: #0f172a;
     line-height: 1.6;
   }
 
@@ -114,7 +114,7 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 400;
-    color: #888;
+    color: #64748b;
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -124,27 +124,27 @@
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 17px;
     font-weight: 400;
-    color: #888;
+    color: #64748b;
     line-height: 1.6;
     margin-top: 0.1rem;
   }
 
   .plain-text {
     font-size: 17px;
-    color: #888;
+    color: #64748b;
     line-height: 2;
   }
 
   .contact-text {
     font-size: 17px;
-    color: #888;
+    color: #64748b;
     line-height: 1.9;
     max-width: 540px;
     margin-top: 0.4rem;
   }
 
   .contact-text a {
-    color: #111;
+    color: #0f172a;
     text-decoration: underline;
     text-underline-offset: 3px;
   }
