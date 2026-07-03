@@ -7,7 +7,7 @@
     return arr;
   }
 
-  const allPhotos = Array.from({length: 83}, (_, i) => ({
+  const allPhotos = Array.from({length: 99}, (_, i) => ({
     src: `/photos/harvey-chu-${i + 1}.jpeg`,
     alt: `Harvey Chu Seattle Bellevue — photo ${i + 1}`
   }));
@@ -90,7 +90,7 @@
 <svelte:window on:keydown={onKey} />
 
 <h1>Photos.</h1>
-<p class="sub">Some memories from the past.</p>
+<p class="sub">Some personal memories from the past.</p>
 
 <div class="grid">
   {#each photos as photo, i (photo.src)}

@@ -15,7 +15,7 @@
   .about-text {
     font-size: 15px;
     line-height: 1.9;
-    color: #555;
+    color: #64748b;
     max-width: 560px;
   }
   .about-text p {
